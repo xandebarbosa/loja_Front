@@ -1,0 +1,150 @@
+.footer-container {
+    width: 100%;
+    height: 400px;
+
+    background-color: rgb(235, 220, 220);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    height: 80%; /**Definirmos a altura da página **/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.footer-content .footer-linha-1 {
+    height: 100%;
+    width: 100%;
+}
+
+.footer-linha-1 { 
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-left {
+    width: 450px;
+    height: 300px;
+    float: left;
+    background-color: rgb(204, 197, 197);
+
+    text-align: center;
+    
+}
+
+.footer-center {
+    width: 450px;
+    height: 300px;
+    float: left;
+    background-color: rgb(204, 197, 197);
+
+    text-align: center;
+}
+
+.footer-right {
+    width: 450px;
+    height: 300px;
+    float: left;
+    background-color: rgb(204, 197, 197);
+
+    text-align: center;
+}
+
+.footer-information-credit {
+    font-family: verdana, arial, helvetica;
+    font-weight: 600;
+    font-size:13pt;
+}
+
+.footer-information-credit-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(131, 126, 126);
+}
+
+.footer-information-credit-text2 a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(34, 34, 204);
+    text-decoration: none;
+}
+
+/** */
+.footer-information-frete {
+    font-family: verdana, arial, helvetica;
+    font-weight: 600;
+    font-size:13pt;
+}
+
+.footer-information-frete-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(131, 126, 126);
+}
+
+.footer-information-frete-text2 a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(34, 34, 204);
+    text-decoration: none;
+}
+
+/** */
+.footer-information-security {
+    font-family: verdana, arial, helvetica;
+    font-weight: 600;
+    font-size:13pt;
+}
+
+.footer-information-security-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(131, 126, 126);
+}
+
+.footer-information-security-text2 a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    color: rgb(34, 34, 204);
+    text-decoration: none;
+}
+
+.footer-content .footer-linha-2 { 
+    width: 100%;
+    height: 80%;
+}
+
+.footer-texto-rodape {
+    width: 100%;
+    height: 5%;
+}
+.footer-texto-rodape li {
+    display: inline;
+    margin: 10px;
+}
+
+.footer-texto-rodape a {
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(71, 71, 71);
+}
+
+.footer-texto-rodape2 {
+    color: rgb(148, 140, 140);
+    font-size: 12px;
+    width: 100%;
+    height: 50%;
+    
+}

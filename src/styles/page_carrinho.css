@@ -1,0 +1,260 @@
+.carrinho-container {
+    width: 100%;
+    height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+  
+    padding: 50px;
+  
+    background-color: #e6e6e6;
+  }
+  
+  .carrinho-content {
+    width: 95%;
+    height: 780px;
+  
+    padding: 32px 64px;
+  
+    background-color: #fff;
+    border-radius: 7px;
+
+    overflow-y: auto;
+  }
+  
+  .carrinho-menu {
+    width: 100%;
+  
+    margin: 50px 0;
+  
+    display: flex;
+  
+    border-bottom: 1px solid #e6e6e6;
+  }
+  
+  .carrinho-menu .carrinho-menu-1 {
+    width: 200px;
+  
+    border-bottom: 2px solid #000;
+  
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  
+    font-size: 17px;
+    font-weight: bold;
+  }
+  
+  .carrinho-menu .carrinho-menu-1 span {
+    margin-bottom: 20px;
+  }
+  
+  .carrinho-menu .carrinho-menu-2 {
+    width: 200px;
+  
+    border-bottom: 1px solid #e6e6e6;
+  
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  
+    font-size: 17px;
+    color: #3483fa;
+  }
+  
+  .carrinho-menu .carrinho-menu-2 span {
+    margin-bottom: 20px;
+  }
+  
+  .carrinho-conteudo {
+    display: flex;
+  
+    height: 165px;
+  
+    border-bottom: 1px solid #e6e6e6;
+  
+    padding-bottom: 40px;
+  }
+  
+  .carrinho-conteudo-info {
+    width: 100%;
+  
+    margin-left: 15px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .carrinho-conteudo-info ul {
+    display: flex;
+  }
+  
+  .carrinho-conteudo-info h4 {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .carrinho-conteudo .carrinho-conteudo-frete {
+    color: #00a650;
+  
+    font-size: 14px;
+  }
+  
+  .carrinho-conteudo .carrinho-conteudo-tamanho {
+    color: #999;
+    font-size: 16px;
+  }
+  
+  .carrinho-conteudo-info ul li {
+    list-style: none;
+  
+    font-size: 12px;
+    color: #3483fa;
+  
+    padding: 0 5px;
+  }
+  
+  .carrinho-conteudo-info ul li:first-child {
+    padding-left: 0;
+  }
+  
+  .carrinho-conteudo-qtdade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    width: 200px;
+  }
+  
+  .carrinho-conteudo-qtdade-container {
+    border: 1px solid #e6e6e6;
+    border-radius: 7px;
+    background-color: #fff;
+  
+    width: 100px;
+    height: 50px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .carrinho-conteudo-qtdade-container button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  
+    width: 50px;
+    height: 100%;
+  
+    font-size: 20px;
+    font-weight: bold;
+    color: #e6e6e6;
+  }
+  
+  .carrinho-conteudo-qtdade span {
+    font-size: 14px;
+    color: #e6e6e6;
+  }
+  
+  .carrinho-conteudo-preco {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .carrinho-conteudo-preco p {
+    width: 200px;
+  
+    font-size: 26px;
+    font-weight: bold;
+  
+    text-align: right;
+  }
+
+  .carrinho-conteudo-endereco { 
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+            
+  }
+
+  .carrinho-conteudo-endereco p{
+    
+    margin: 20px; /*Define o espaço entre as tags */
+    font-size: 14px;
+    color:#3483fa;
+    text-align: center;
+       
+
+  }
+
+  .carrinho-conteudo-endereco h4 {
+
+    text-align: right;
+    font-size: 18px;
+    color: green;
+    margin: 20px; /*Define o espaço entre as tags */
+   
+  }
+
+  .carrinho-valor-final {
+    display: flex;
+    align-items: right;
+    justify-content: flex-end;
+
+    border-bottom: 1px solid #e6e6e6;
+    
+    
+  }
+
+  .carrinho-valor-final p {
+    font-weight: bold;
+    font-size: 18px;
+    
+    margin: 20px; /*Define o espaço entre as tags */
+    
+  }
+
+  .carrinho-valor-final h4 {
+    margin: 20px; /*Define o espaço entre as tags */
+
+  }
+
+  .carrinho-finalizar-compra { 
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+  }
+
+  .carrinho-button-finalizar {
+    width: 215px;
+    height: 50px;
+
+    background-color: #3483fa;
+    color: #fff;
+
+    border: none;
+
+    border-radius: 3px;
+  }
+
+  .carrinho-button-finalizar:hover {
+    background-color: #2968c8;
+  }
+
+  .carrinho-button-finalizar-sem-login{
+    width: 215px;
+    height: 50px;
+
+    background-color: #00a650;
+    ;
+    color: #fff;
+
+    border: none;
+
+    border-radius: 3px;
+  }
+ 

@@ -1,0 +1,214 @@
+.revisao-container {
+    width: 100%;
+    height: 700px;
+
+    padding: 50px 200px;
+
+    background-color: #ebebeb;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.revisao-titulo{
+    font-size: 24px;
+    color: #333;
+
+    margin: 20px 0;
+}
+
+.revisao-subtitulo{
+    font-size: 15px;
+    color: #333333;
+}
+
+.revisao-card-container{
+    padding: 20px 32px;
+    background: #f5f5f5;
+
+    border-radius: 7px;
+
+    margin: 30px 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.revisao-card-flex {
+    display: flex;
+}
+
+.revisao-card-info{ 
+    font-size: 14px;
+    color: #3483fa;
+}
+
+.revisao-card-info:hover{
+    cursor: pointer;
+}
+
+.revisao-card-image{
+    background: #fff;
+    width: 48px;
+    height: 48px; 
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 15px;
+}
+
+.revisao-card-titulo{
+    font-size: 16px;
+    color: #333333;
+
+    display: flex;
+    align-items: center;
+}
+
+.revisao-card-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.revisao-card-subtitulo{
+    font-size: 14px;
+    color: #666666;
+}
+
+.revisao-card-descricao{
+    font-size: 14px;
+    color: #999999;
+
+    margin-top: 20px;
+}
+
+.revisao-direita{
+    background-color: #f5f5f5;
+    width: 250px;
+    width: 100%;
+
+    padding: 48px 0 0;
+    
+
+}
+
+.revisao-direita-image {
+    background: #fff;
+    width: 48px;
+    height: 48px; 
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 15px;
+}
+
+.revisao-direita-image img{
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+}
+
+.revisao-direita-container{ 
+    display:flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.revisao-direita-descricao{
+    font-size: 16px;
+    color: #333333;
+    padding: 0 40px;
+
+    margin-top: 10px;
+}
+
+.revisao-direita-cor{
+    font-size: 14px;
+    color: #999999;
+    margin-bottom:  24px;
+
+    margin-top: 15px;
+}
+
+.revisao-direita-quantidade{
+    font-size: 14px;
+    color: #333333;
+
+    margin-bottom: 20px;
+    
+}
+
+.linha-divisoria{
+    width: 350px;
+    border-bottom: 1px solid #d8cece;
+    
+    margin: 30px 34px;
+}
+
+.revisao-direita-valor-produto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.revisao-direita-valor-produto p{
+    font-size: 16px;
+    color: #333333;
+}
+
+.revisao-direita-valor-produto span{
+    font-size: 18px;
+    color: #333333;
+}
+
+.revisao-direita-valor-total{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.revisao-direita-valor-total p{
+    font-size: 20px;
+    color: #333333;
+}
+
+.revisao-direita-valor-total span{
+    font-size: 20px;
+    color: #333333;
+}
+
+.revisao-card-button{ 
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    margin-right: 40px;
+}
+
+.revisao-card-button button{
+    width: 140px;
+    height: 48px;
+    background: #3483fa;
+
+    font-size: 16px;
+
+    border-radius: 4px;
+    color: #fff;
+
+    border: none;
+}
+
+.revisao-card-button button:hover{
+    cursor: pointer;
+}

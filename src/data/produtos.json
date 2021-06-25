@@ -1,0 +1,56 @@
+[
+    {
+        "id": "1",
+        "imagem": "",
+        "nome": "Jaqueta Revit Vertex Air Motosprint #1",
+        "descricao": "Jaqueta Revit Vertex Air Motosprint #1",
+        "valor": 1490,
+        "tamanho": "M",
+        "cor": "Branco"
+    },
+    {
+        "id": "2",
+        "imagem": "",
+        "nome": "Jaqueta Revit Vertex Air Motosprint #2",
+        "descricao": "Jaqueta Revit Vertex Air Motosprint #2",
+        "valor": 960,
+        "tamanho": "M",
+        "cor": "Preto"
+    },
+    {
+        "id": "3",
+        "imagem": "",
+        "nome": "Jaqueta Revit Vertex Air Motosprint #3",
+        "descricao": "Jaqueta Revit Vertex Air Motosprint #3",
+        "valor": 1290,
+        "tamanho": "P",
+        "cor": "Branco"
+    },
+    {
+        "id": "4",
+        "imagem": "",
+        "nome": "Jaqueta Revit Vertex Air Motosprint #4",
+        "descricao": "Jaqueta Revit Vertex Air Motosprint #4",
+        "valor": 1530,
+        "tamanho": "G",
+        "cor": "Branco"
+    },
+    {
+        "id": "5",
+        "imagem": "",
+        "nome": "Jaqueta Revit Vertex Air Motosprint #5",
+        "descricao": "Jaqueta Revit Vertex Air Motosprint #5",
+        "valor": 990,
+        "tamanho": "P",
+        "cor": "Preto"
+    },
+    {
+        "id": "6",
+        "imagem": "",
+        "nome": "Jaqueta Revit Vertex Air Motosprint #6",
+        "descricao": "Jaqueta Revit Vertex Air Motosprint #6",
+        "valor": 800,
+        "tamanho": "G",
+        "cor": "Preto"
+    }
+]

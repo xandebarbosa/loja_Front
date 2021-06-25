@@ -1,0 +1,539 @@
+.header-container {
+    width: 100%;
+    height: 100px;
+
+    background-color: #fff159;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-content {
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.header-content .header-linha {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.header-linha-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    margin-top: 20px;
+    
+}
+
+.header-linha-1 p{
+    font-size: 14px;
+}
+
+.header-caixa-pesquisa {
+    width: 600px;
+    height: 40px;
+    background: #fff;
+
+    display: flex; /** coloca todos os itens um na frente do outro, não deixa quebrado**/
+    align-items: center; /** alinha os itens no centro**/
+    justify-content: space-between;/** divide os itens no espaço disponivel, um item na esquerda, um no meio e outro na direita**/
+
+    border-radius: 4px;
+}
+
+.header-caixa-pesquisa input {
+    border: none;
+    
+
+    outline: #e6e6e6;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    border-right: 1px solid #e6e6e6;
+}
+
+.header-caixa-pesquisa img {
+    padding: 0 20px;
+    height: 17px;
+
+    cursor: pointer;
+}
+
+.header-linha-2 {
+    width: 100%;
+
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-start;
+
+    
+}
+
+.header-linha-menu {
+    list-style: nome;
+    padding: 0;
+}
+
+.header-linha-menu li {
+    display: inline;
+   
+}
+
+.header-linha-menu li a {
+    color:gray;
+    
+    text-decoration: none;
+    
+    font-size: 12px;
+    line-height: normal;
+    
+}
+
+.header-linha-menu li a:hover {
+    color: black;
+}
+
+.header-texto-carrinho { 
+    width: 50%;
+
+    display: inline;
+    align-items: center;
+    justify-content: flex-end;
+    
+    cursor: pointer;
+}
+
+.header-texto-carrinho li {
+    display: inline;
+
+    border: 1px grey;
+    margin: 10px;
+    margin-bottom: 8px;
+    text-align: right;
+}
+
+.header-texto-carrinho li a {
+    color: black;
+    
+    text-decoration: none;
+    display: inline;
+    font-size: 12px;
+    
+}
+
+.header-button-cep {
+    
+    border: thin;
+    background-color: #fff159;
+    
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 12px;
+    
+    color: #333;
+    
+    border-color: rgb(179, 176, 176);
+    
+}
+
+.header-button-cep hover{
+    color: gray;
+}
+
+/*.header-texto-carrinho {
+    list-style: nome;
+    padding: 0;
+}*/
+
+
+
+.header-linha-item1 { 
+    margin-bottom: 1em;
+}
+
+.ul.header-linha-1 {
+    margin-bottom: 1em;
+}
+
+.header-linha-menu li {
+   
+    border: 1px grey;
+    margin: 8px;
+    margin-bottom: 8px;
+
+}
+
+/*.header-texto-carrinho li {
+    border: 1px grey;
+    margin: 10px;
+    margin-bottom: 8px;
+    text-align: right;
+}*/
+
+.header-linha-menu li ul {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+}
+
+.header-linha-menu li:hover ul, .header-linha-menu.over ul {
+    display: block;
+}
+
+.header-linha-menu ul li {
+    
+    display: block;
+    width: 150px;
+}
+
+
+.tela-grande{
+    display: block; /*para fazer aparecer */
+}
+
+.tela-pequena{
+    display: none; /* para esconder*/
+
+    background-color: #fff159;
+
+    padding: 7px;
+    
+}
+
+.tela-pequena-lina-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tela-pequena-lina-1 input{
+    width: 100%;
+    margin: 0 7px;
+
+    border-radius: 20px;
+    padding: 7px;
+
+    border: none;
+    outline: none;
+
+    font-size: 14px;
+
+}
+
+.tela-pequena-lina-1 button{
+    border: none;
+    background: transparent;
+}
+
+.tela-pequena-lina-1 img{
+    height: 50px;
+    height: 50px;
+}
+
+.tela-pequena-lina-2{
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+}
+
+.tela-pequena-menu{ 
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 50%;
+    height: 100vh;
+
+    background: #fff;
+
+    overflow: auto;
+}
+
+.tela-pequena-menu-linha-1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 10px 10px;
+
+    border-bottom: 1px solid #bbb9b9;
+}
+
+.tela-pequena-menu-texto p{
+    font-size: 10px;
+    color: #c7c7c7;
+}
+
+.tela-pequena-menu-texto span{
+    font-size: 13px;
+    color: rgb(54, 52, 52);
+    font-weight: bold;
+}
+
+.tela-pequena-menu-linha-1 button{
+    border: 0;
+    outline: none;
+    background-color: #fff;
+    margin: 0 25px;
+}
+
+.tela-pequena-menu-texto{
+    
+    align-items: right;
+}
+
+.tela-pequena-menu-linha-2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 10px 10px;
+
+    border-bottom: 1px solid #bbb9b9;
+}
+
+.tela-pequena-menu-linha-2 li{
+    list-style: none;
+    padding: 3px 3px;
+    margin: 15px 10px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-house{
+    color: #333333;
+        
+    margin-right: 5px;
+    
+    align-items: flex-end !important;
+    justify-content: center !important;
+
+    width: 20px;
+    height: 20px;
+}
+
+.icon-bell{
+    color: #333333;
+    
+    margin-right: 5px;
+
+    display: inline-block;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.icon-shopping{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.icon-heart{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.icon-circle{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.icon-tag{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.icon-Video{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.icon-time{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.icon-go-tag{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.tela-pequena-menu-linha-3{ 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 10px 10px;
+
+    border-bottom: 1px solid #bbb9b9;
+}
+
+.tela-pequena-menu-linha-3 li{
+    list-style: none;
+    padding: 3px 3px;
+    margin: 15px 10px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-menu{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.icon-basket{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.icon-house{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.tela-pequena-menu-linha-4{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 10px 20px;
+
+    border-bottom: 1px solid #bbb9b9;
+}
+
+.tela-pequena-menu-linha-4 p{
+    list-style: none;
+    padding: 3px 3px;
+    margin: 10px 10px 20px 0;
+
+    align-items: center;
+    justify-content: center;
+}
+.icon-question{
+    color: #333333;
+    
+    margin-right: 5px;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+}
+
+.tela-pequena-menu-linha-5{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin: 10px 15px;
+
+}
+
+.tela-pequena-menu-linha-5 p{
+    list-style: none;
+    /*padding: 3px 3px;*/
+    margin: 5px 5px 15px 0;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-Arrow{
+    color: #333333;
+    
+    margin-right: 5px;
+    
+    align-items: center;
+    justify-content: center;
+
+    width: 25px;
+    height: 25px;
+}
+
+@media only screen and (max-width: 900px) {
+    .tela-grande{
+        display: none !important; /*quando chegar nos 900px a tela grande vai trocar para nome - esconder */
+    }
+    .tela-pequena{
+        display: block !important; /* vai fazer aparecer a tela pequena*/
+    }
+  }
