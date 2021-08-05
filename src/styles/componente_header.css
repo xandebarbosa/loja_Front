@@ -70,14 +70,19 @@
     cursor: pointer;
 }
 
+.header-caixa-pesquisa button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 .header-linha-2 {
     width: 100%;
 
     display: flex; 
     justify-content: space-around;
     align-items: flex-start;
-
-    
+   
 }
 
 .header-linha-menu {
@@ -105,8 +110,6 @@
 }
 
 .header-texto-carrinho { 
-    width: 50%;
-
     display: inline;
     align-items: center;
     justify-content: flex-end;
@@ -180,7 +183,7 @@
     margin-bottom: 8px;
     text-align: right;
 }*/
-
+/*
 .header-linha-menu li ul {
     position: absolute;
     top: 25px;
@@ -197,7 +200,7 @@
     
     display: block;
     width: 150px;
-}
+}*/
 
 
 .tela-grande{
@@ -537,3 +540,93 @@
         display: block !important; /* vai fazer aparecer a tela pequena*/
     }
   }
+
+.header-lista-itens{
+    position: relative;  /*Qdo colocamos um item com a posição relativa, permite que os itens que estão dentro possam usar a posição absoluta. */
+}
+
+.header-menu-logado{
+    position: absolute; /* Para podermos utilizar um absolute de forma correta, o pai dele, header-lista-itens, seja relativo */
+    
+    background: #fff;
+    width: 300px;
+    height: 400px;
+
+    top: 23px;
+}
+
+.header-menu-logado p{
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 10px;
+
+}
+
+.header-menu-logado span{
+    padding: 5px 15px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.header-menu-logado button {
+    width: 100%;
+    height: 35px;
+
+    border: none;
+    padding: 0 15px;
+    text-align: left;
+
+    font-size: 14px;
+    outline: none;
+
+    background:#fff;
+    color: #333;
+
+    transition: 0.2s;
+    
+}
+
+.header-menu-logado button:hover{
+    background: #e6e6e6;
+    color: rgb(84, 107, 238);
+}
+
+.header-menu-categorias{
+    position: relative !important;  /*Qdo colocamos um item com a posição relativa, permite que os itens que estão dentro possam usar a posição absoluta. */
+        
+}
+.header-menu-categorias li{
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    
+    cursor: pointer;
+}
+
+
+.header-lista-categorias{
+    position: absolute !important; /* Para podermos utilizar um absolute de forma correta, o pai dele, header-lista-itens, seja relativo */
+    
+    background: #fff;
+    width: 200px;
+    height: 280px;
+
+    top: 23px;
+}
+
+.header-lista-categorias li{
+    display: flex !important;
+    align-items: left;
+    justify-content: left;
+    
+    cursor: pointer;
+
+    padding: 5px 15px;
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 10px;
+}

@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="footer-linha-1">
                     <div className="footer-left">
                         <div className="footer-information-credit">
-                            <img src={creditcard} />
+                            <img src={creditcard}  alt="credit card"/>
                             <br></br>
                             
                         <p>Pague com cartão de crédito ou <br/>
@@ -30,7 +30,7 @@ const Footer = () => {
                     </div>
                    <div className="footer-center">
                         <div className="footer-information-frete">
-                            <img src={archive} />
+                            <img src={archive} alt="archive"/>
                             <br />
                             Frete grátis a partir de R$79<br />
                         </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                    </div>
                    <div className="footer-right">
                         <div className="footer-information-security">
-                            <img src={shield} />
+                            <img src={shield} alt="shield" width="55" height="55" />
                             <br />
                             Segurança, do início ao fim<br />
                         </div>

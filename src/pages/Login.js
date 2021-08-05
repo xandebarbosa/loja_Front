@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useFormik } from 'formik';
 
 import { useHistory } from "react-router-dom";
+import { toast } from "react-toastify";
 
 import '../styles/page_login.css';
 
@@ -30,10 +31,11 @@ const Login = () => {
 
         if(resposta.error === true ){
           
-          return alert(resposta.message);
+          return toast.error(resposta.message);
 
         }
 
+        toast.success("Seja bem vindo!!")
         logarUsuario(resposta.user, resposta.token);  //São as duas informações que resposta me devolve
         history.push("/");
       },

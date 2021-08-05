@@ -9,6 +9,8 @@ import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import Produto from './pages/Produto';
 import Revisao from './pages/Revisao';
+import Pedidos from './pages/Pedidos';
+import Resultado from './pages/Resultado';
 
 //Componente
 import Header from './components/Header';
@@ -25,6 +27,8 @@ const Routes = () => {
             <Route exact path="/cadastro" component={Cadastro} />    
             <Route exact path="/produto/:id" component={Produto} />
             <Route exact path="/revisao" component={Revisao}/>
+            <Route exact path="/pedidos" component={Pedidos} />
+            <Route exact path="/resultado" component={Resultado} />
         </Switch>
         <Footer />
     </Router>

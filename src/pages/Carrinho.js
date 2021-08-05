@@ -1,6 +1,7 @@
 import React from "react";
 
 import { useHistory } from "react-router-dom";
+import { toast } from "react-toastify";
 
 import "../styles/page_carrinho.css";
 
@@ -11,10 +12,16 @@ import jaqueta from '../assets/images/jaqueta.webp';
 
 const Carrinho = () => {
 
-    const { produtos, quantidadeTotal, valorTotal } = useAppContext();
+    const { produtos, quantidadeTotal, valorTotal, addQuantidade, removerQuantidade, removerItem, capitalizeFirst } = useAppContext();
     const { logado } = useAutenticacaoContext();
 
     const history = useHistory();
+
+    /**/
+
+    function handleToRevisao() {
+        history.push("/revisao");
+    }
 
     return (
         <div className="carrinho-container">
@@ -35,14 +42,14 @@ const Carrinho = () => {
                          <img src={jaqueta} alt="jaqueta" width="50" height="50" />
                      </div>
                      <div className="carrinho-conteudo-info">
-                         <h4> {item.descricao} </h4>
+                         <h4> {capitalizeFirst(item.nome)} </h4>
                          <p className="carrinho-conteudo-tamanho">
-                         
-                         Cor:{item.cor}, Tamanho: {item.tamanho}
+                        
+                         Cor: {item.cor}, Tamanho: {item.tamanho}
                          </p>
                          <p className="carrinho-conteudo-frete"> Frete grátis </p>
                          <ul>
-                         <li> Excluir </li>
+                         <li className="carrinho-conteudo-excluir" onClick={() => removerItem({ produtoId: item.id })}> Excluir </li>
                          <li> Mais produtos do vendedor </li>
                          <li> Comprar agora </li>
                          <li> Salvar para depois </li>
@@ -50,13 +57,26 @@ const Carrinho = () => {
                      </div>
                      <div className="carrinho-conteudo-qtdade">
                          <div className="carrinho-conteudo-qtdade-container">
-                         <button> - </button>1<button> + </button>
+
+                            <button 
+                                onClick={() => removerQuantidade({ produtoId: item.id })}
+                                disabled={item.quantidade === 1 ? true : false }
+                            > 
+                                - 
+                            </button>
+                            
+                                {item.quantidade}
+                            
+                            <button onClick={() => addQuantidade({ produtoId: item.id })}> 
+                                + 
+                            </button>
+
                          </div>
      
-                         <span> Último disponível </span>
+                         <span> {produtos.quantidade} disponível </span>
                      </div>
                      <div className="carrinho-conteudo-preco">
-                         <p> R$ {item.valor} </p>
+                         <p> {item.preco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </p>
                      </div>
                      </div>
                 ))}
@@ -69,12 +89,13 @@ const Carrinho = () => {
                 
                 <div className="carrinho-valor-final">
                     <h4>Total com frete</h4>
-                    <p> R$ {valorTotal} </p>
+                    <p> {valorTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})} </p>
                 </div>
                 < br/>
                 <div className="carrinho-finalizar-compra">
                     { logado === true ? (
-                        <button className="carrinho-button-finalizar" onClick={() => history.push('/revisao')}>
+                        <button className="carrinho-button-finalizar" 
+                            onClick={handleToRevisao}>  
                             Finalizar a compra
                         </button>
                     ) : (
